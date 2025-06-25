@@ -1,0 +1,156 @@
+body {
+    margin: 0; /*This removes the margin from the whole page, filling the whole webpage with content, showing no gaps in te borders of the page */
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+
+
+/* Header */
+.header {
+    height: 50px;
+    background-color: rgb(221, 164, 164);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+.logo {
+    font-size: 24px;
+    color: #F9FaF8;
+    font-weight: 900;
+}
+
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+/* Hero */
+.hero {
+    display: flex;
+    background-color: #1F2937;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+    padding-left: 250px;
+    padding-right: 250px;
+    gap: 50px;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FAF8;
+}
+
+.hero-text {
+    margin-bottom: 20px;
+    color: #F9FAF8;
+}
+
+.hero-button {
+    color: #F9FAF8;
+    background-color: #3882F6;
+    font-weight: bold;
+    padding: 8px 40px;
+    border-radius: 10px;
+    border-style: none; /*Remove any border lines*/
+}
+
+img {
+    width: 500px;
+    height: 200px;
+}
+
+/*Information */
+.information {
+    text-align: center;
+    height: 300px;
+}
+
+.info-title {
+    padding-bottom: 32px;
+    padding-top: 32px;
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+}
+.icon-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 52px;
+}
+
+.icon {
+    max-width: 200px; /*Make every icons 'size' or widt smaller */
+}
+
+/*Quote*/
+.quote {
+    height: 300px;
+    background-color: #E5E7EB;
+
+}
+
+.quote-text {
+    font-size: 36px;
+    color: #1F2937;
+    font-style: italic;
+}
+
+.reference {
+    font-weight: bold;
+}
+
+/* cta */
+.cta {
+    height: 300px;
+    display: flex;
+}
+
+
+
+.text {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+/*button { 
+    background-color: #3882F6;
+    font-weight: bold;
+    padding: 8px 40px;
+    border-radius: 10px;
+    border-style: none; /*Remove any border lines*/
+
+
+.icon-container{
+    display: flex;
+}
+
+
+
+
+.footer {
+     height: 50px;
+     background-color: #1F2937;
+     color: white;
+     display: flex; /*Make it flex to align text to the bottom */
+     align-items: center;
+     justify-content: center;
+}
