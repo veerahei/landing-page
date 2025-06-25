@@ -1,25 +1,30 @@
-body {
+* {
     margin: 0; /*This removes the margin from the whole page, filling the whole webpage with content, showing no gaps in te borders of the page */
+    padding: 0;
     font-family: "Roboto", sans-serif;
-    display: flex;
-    flex-direction: column;
     box-sizing: border-box;
 }
 
-
+/*Add space to both sides and top/bottom in every section*/
+.header,
+.hero,
+.information,
+.quote,
+.cta {
+    padding: 60px 250px;
+}
 
 /* Header */
 .header {
-    height: 50px;
-    background-color: rgb(221, 164, 164);
+    background-color: #1F2937;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 250px;
-    padding-right: 250px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
-.logo {
+.header-left {
     font-size: 24px;
     color: #F9FaF8;
     font-weight: 900;
@@ -46,24 +51,22 @@ a {
     background-color: #1F2937;
     justify-content: space-between;
     align-items: center;
-    height: 300px;
-    padding-left: 250px;
-    padding-right: 250px;
     gap: 50px;
+    /*height may need to be set */
 }
 
-.title {
+h1 {
     font-size: 48px;
     font-weight: 900;
     color: #F9FAF8;
 }
 
-.hero-text {
+.hero-left p {
     margin-bottom: 20px;
     color: #F9FAF8;
 }
 
-.hero-button {
+.hero-left button {
     color: #F9FAF8;
     background-color: #3882F6;
     font-weight: bold;
@@ -78,18 +81,12 @@ img {
 }
 
 /*Information */
-.information {
+.information h2 {
     text-align: center;
-    height: 300px;
+    margin-bottom: 30px;
 }
 
-.info-title {
-    padding-bottom: 32px;
-    padding-top: 32px;
-    font-size: 36px;
-    font-weight: 900;
-    color: #1F2937;
-}
+
 .icon-container{
     display: flex;
     align-items: center;
@@ -97,54 +94,68 @@ img {
     gap: 52px;
 }
 
+.iconimage {
+    border: 5px solid #3882F6;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+}
+
 .icon {
-    max-width: 200px; /*Make every icons 'size' or widt smaller */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 150px;
 }
 
 /*Quote*/
 .quote {
-    height: 300px;
     background-color: #E5E7EB;
-
 }
 
 .quote-text {
     font-size: 36px;
     color: #1F2937;
     font-style: italic;
+    font-weight: lighter;
 }
 
-.reference {
+.quote-reference {
     font-weight: bold;
+    text-align: end;
 }
 
 /* cta */
 .cta {
-    height: 300px;
     display: flex;
 }
 
-
-
-.text {
-    font-size: 18px;
+.cta-container-blue {
+    background-color: #3882F6;
+    border-radius: 10px;
     color: #E5E7EB;
+    padding: 30px 100px;
+    flex: 1; /* Make the blue container take the space available */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/*button { 
+.cta-heading {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.cta-right button {
+    color: #F9FAF8;
     background-color: #3882F6;
     font-weight: bold;
     padding: 8px 40px;
     border-radius: 10px;
-    border-style: none; /*Remove any border lines*/
-
-
-.icon-container{
-    display: flex;
+    border: 2px solid white;
 }
-
-
-
 
 .footer {
      height: 50px;
@@ -153,4 +164,9 @@ img {
      display: flex; /*Make it flex to align text to the bottom */
      align-items: center;
      justify-content: center;
+}
+
+.footer-text {
+    font-size: 18px;
+    color: #E5E7EB;
 }
