@@ -1,5 +1,5 @@
 * {
-    margin: 0; /*This removes the margin from the whole page, filling the whole webpage with content, showing no gaps in te borders of the page */
+    margin: 0; /*Remove the margin from the whole page, filling the whole webpage with content, showing no gaps in te borders of the page */
     padding: 0;
     font-family: "Roboto", sans-serif;
     box-sizing: border-box;
@@ -12,6 +12,13 @@
 .quote,
 .cta {
     padding: 60px 250px;
+}
+
+.hero,
+.information,
+.quote,
+.cta { 
+    height: 400px;
 }
 
 /* Header */
@@ -113,6 +120,13 @@ img {
 /*Quote*/
 .quote {
     background-color: #E5E7EB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-container {
+    width: 1000px;
 }
 
 .quote-text {
@@ -130,6 +144,8 @@ img {
 /* cta */
 .cta {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cta-container-blue {
@@ -137,10 +153,12 @@ img {
     border-radius: 10px;
     color: #E5E7EB;
     padding: 30px 100px;
-    flex: 1; /* Make the blue container take the space available */
+    /*flex: 1;  Make the blue container take the space available */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 1000px;
+    height: 150px;
 }
 
 .cta-heading {
